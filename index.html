@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./Img/Bodega_Logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/0b6d2c7b29.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div class="grad"></div>
+    <div class="container">
+        <!--Formulario para el inicio de sesion-->
+        <div class="box">
+        <form method="POST" action="PHP/Metodos/login.php">
+            <h2 class="animation">Inicia sesión para continuar.</h2>
+            <div class="inputBox">
+                <input type="text" required="required" name="usuario" id="usuario">
+                <span>Nombre de usuario</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <!--iconos para la funcion de mostrar contraseña o no-->
+                <div class="eye-container">
+                    <a href="#" id="show-password">
+                        <img src="Img/iconizer-ojo.svg" alt="ojo" height="20px" id="eye">
+                    </a>
+                    <a href="#" id="hide-password" style="display:none;">
+                        <img src="Img/iconizer-visible.svg" alt="ojo" height="20px" id="eye">
+                    </a>
+                </div>
+                <input type="password" required="required" name="contraseña" id="contraseña">
+                <span>Contraseña</span>
+                <i></i>
+            </div>
+            <div class="password">
+                <div class="remember-me">
+                    <input type="checkbox" name="checkbox" value="recordarme" id="remember-checkbox">
+                    <label for="remember-checkbox">recordarme</label>
+                </div>
+            </div>
+            <input type="submit" value="INICIAR SESIÓN">
+            <div class="contacto">
+                <span class="line"></span>
+                <p class="animation">contactanos</p>
+                <span class="line"></span>
+                </div>
+                <div class="botones">
+                    <a href="https://api.whatsapp.com/send?phone=+569 6917 9070&text=Hola, tengo una consulta." target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:ls.huber11@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+        </form>
+        </div>
+    </div>
+
+    <script src="JavaScript/index.js"></script>
+
+</body>
+
+</html>
