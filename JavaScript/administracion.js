@@ -1,7 +1,7 @@
 
 // Funcion para preguntar antes de eliminar Bodega
 function eliminar() {
-    var respuesta = confirm("¿Esta seguro que quiere eliminar la bodega? este cambio sera irreversible");
+    var respuesta = confirm("¿Esta seguro de querer realizar esta accion? La bodega sera eliminada permanentemente, y este cambio sera irreversible");
     return respuesta;
 }
 
